@@ -1,5 +1,5 @@
 {
-  "name": "mlgc2",
+  "name": "mlfc",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,15 +10,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
     "@google-cloud/firestore": "^7.10.0",
     "@hapi/hapi": "^21.3.12",
-    "@tensorflow/tfjs-node": "^3.21.1",
-    "dotenv": "^16.4.5",
-    "nvm": "^0.0.4"
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
-  },
-  "description": ""
+  }
 }
