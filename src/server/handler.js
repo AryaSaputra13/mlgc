@@ -3,6 +3,13 @@ const crypto = require('crypto');
  
 async function postPredictHandler(request, h) {
   const { image } = request.payload;
+  console.log("Received image buffer:", image);
+  if (!image) {
+    return h.response({
+        status: 'fail',
+        message: 'Image is required',
+    }).code(400);
+}
   const { model } = request.server.app;
  
   const { confidenceScore, label, explanation, suggestion } = await predictClassification(model, image);
