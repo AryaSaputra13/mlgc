@@ -7,6 +7,7 @@ const routes = [
     handler: postPredictHandler,
     options: {
       payload: {
+        /*Mengizinkan data berupa gambar*/
         allow: 'multipart/form-data',
         multipart: true
       }
